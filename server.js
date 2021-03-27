@@ -8,7 +8,7 @@ const {userJoin, getCurrentUser, userLeave, getRoomUsers} = require('./utils/use
 const app = express();
 const server = http.createServer(app);
 const io = socketio(server);
-
+const hostname ='0.0.0.0';
 const bot = 'Texter';
 
 // Run when client connects
